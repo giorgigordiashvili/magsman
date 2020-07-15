@@ -1,0 +1,266 @@
+.about {
+  max-width: 1920px;
+  h1 {
+    font-size: 40px;
+    font-family: futura;
+    color: black;
+    padding-bottom: 43px;
+    @media only screen and (max-width: 785px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-family: futura;
+    color: black;
+  }
+}
+.who-we-are {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+  @media only screen and (max-width: 785px) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+}
+
+.who-we-are__text {
+  max-width: 1309px;
+  box-sizing: border-box;
+  padding: 73px 112px;
+  background: white;
+  position: relative;
+  bottom: 100px;
+
+  @media only screen and (max-width: 785px) {
+    padding: 0;
+    bottom: 0;
+    h1 {
+      padding: 20px 0;
+      position: relative;
+      bottom: 60px;
+      color: black;
+      z-index: 4;
+      padding-left: 20px;
+    }
+    p {
+      position: relative;
+      @media only screen and (max-width: 785px) {
+        bottom: 40px;
+        overflow: hidden;
+        height: 0;
+        transition: all 200ms;
+      }
+    }
+  }
+}
+
+.normal {
+  background: #1a1a1a;
+  position: relative;
+  overflow: visible;
+  max-width: 1920px;
+  @media only screen and (max-width: 786px) {
+    overflow: hidden;
+  }
+  a {
+    color: #767676;
+    &.active {
+      color: white;
+    }
+  }
+}
+
+.logo-normal {
+  position: absolute;
+  @media only screen and (max-width: 981px) {
+    width: 60px;
+    position: relative;
+  }
+}
+
+.what-we-do {
+  max-width: 1535px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  img {
+    width: 40%;
+  }
+  p {
+    word-wrap: break-word;
+  }
+  @media only screen and (max-width: 785px) {
+    flex-direction: column;
+    padding: 0 20px;
+    img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+  }
+}
+
+.what-we-do__text {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 50px;
+  @media only screen and (max-width: 785px) {
+    width: 100%;
+    padding: 0;
+    h1 {
+      padding: 20px 10px;
+      position: relative;
+      bottom: 60px;
+      color: black;
+      z-index: 4;
+      width: 100%;
+      i {
+        margin-right: 40px !important;
+      }
+    }
+    p {
+      bottom: 40px;
+      overflow: hidden;
+      height: 0;
+      transition: all 200ms;
+    }
+  }
+}
+
+.how-we-do-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 164px;
+  justify-content: center;
+  img {
+    max-width: 300px;
+    padding-right: 30px;
+    height: 300px;
+    padding-bottom: 30px;
+  }
+  p {
+    word-wrap: break-word;
+    @media only screen and (max-width: 785px) {
+      bottom: 40px;
+      overflow: hidden;
+      height: 0;
+      transition: all 200ms;
+    }
+  }
+  h1 {
+    padding-bottom: 43px;
+  }
+  @media only screen and (max-width: 785px) {
+    flex-direction: column;
+    margin-top: 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+    img {
+      width: 100%;
+      max-width: 100%;
+      padding-right: 0;
+      padding-bottom: 0;
+      height: 190px;
+      object-fit: cover;
+    }
+    h1 {
+      position: relative;
+      bottom: 39px;
+      padding: 0;
+      padding-left: 20px;
+      z-index: 2;
+      .howdecor {
+        z-index: -1;
+        // bottom: -11px;
+        &:after {
+          bottom: 21px;
+        }
+      }
+    }
+  }
+}
+
+.how,
+.usp {
+  display: flex;
+  width: 45%;
+
+  @media only screen and (max-width: 1400px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media only screen and (max-width: 785px) {
+    width: 100%;
+  }
+}
+
+.hidden-about-heading {
+  display: none;
+  font-size: 20px;
+  font-family: futura;
+  padding: 20px;
+  @media only screen and (max-width: 785px) {
+    display: block;
+  }
+}
+
+.fa-chevron-up {
+  display: none !important;
+  @media only screen and (max-width: 785px) {
+    display: inline !important;
+    float: right;
+    transform: rotate(179deg);
+    margin-right: 20px;
+  }
+}
+
+.whowearetext,
+.whatwedotext,
+.howwedotext,
+.usptext {
+  &.active {
+    height: 200px;
+    transition: all 200ms;
+  }
+}
+
+.decoration {
+  display: none;
+  @media only screen and (max-width: 785px) {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+    left: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 60px;
+      background: white;
+      opacity: 0.6;
+      bottom: 0;
+      z-index: 0;
+      left: 0;
+    }
+  }
+}
+
+.usp {
+  @media only screen and (max-width: 785px) {
+    margin-top: 40px;
+  }
+}

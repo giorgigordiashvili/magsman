@@ -1,0 +1,366 @@
+.brief-wrapper {
+	max-width: 988px;
+	display: flex;
+	flex-direction:column;
+	margin: 20px auto;
+	margin-top: 100px;
+	h1 {
+		font-size: 40px;
+		font-family: futura;
+		text-align: center;
+	}
+	p {
+		font-family: futura;
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 1080px) {
+		padding: 0 10px;
+		// overflow: hidden;
+	}
+	}
+
+	
+.brief-title {
+		font-family: futura;
+		font-size: 18px;
+		padding-top: 50px;
+		max-width: 100%;
+	}
+.form {
+	margin-top: 50px;
+	button {
+		font-size: 40px;
+		font-family: futura;
+		text-align: center;
+		border: none;
+		background: none;
+		margin: 0 auto;
+		display: block;
+		margin-top: 50px;
+		outline: none;
+		cursor: pointer;
+	}
+}
+
+.contact-details-inputs {
+	display: grid;
+	grid-template-columns : repeat(2, 1fr);
+	input {
+		position: relative;
+		min-width: 300px;
+		height: 30px;
+		font-family: futura;
+		font-size: 18px;
+		margin-top: 5px;
+	}
+	label {
+		position: absolute;
+		z-index: 2;
+		top: 8px;
+		font-family: futura;
+		font-size: 20px;
+	}
+	div {
+		padding: 30px 0;
+		position: relative;
+	}
+	@media only screen and (max-width: 775px) {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+}
+
+.brief-p-title {
+	margin-bottom: 50px;
+	display: block;
+	max-width: 280px;
+	height: 43px;
+	background:#1A1A1A;
+	text-align: center;
+	line-height: 43px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.contact-details {
+	@media only screen and (max-width: 775px) {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    p {
+	    	padding: 0 10px;
+	    }
+	}
+	&:nth-child(2) {
+		.contact-details-inputs {
+			grid-template-columns: repeat(1,1fr);
+			input {
+				width: 100%;
+			}
+	}
+	}
+	&:nth-child(3) {
+		.contact-details-inputs {
+		grid-template-columns: repeat(1,1fr);
+
+		}
+	}
+
+}
+
+
+#websitedestination, #competitors, #webdesign, #webstructure {
+	width: 70%;
+	height: 100px;
+	
+}
+
+.website-destination, .competitors, .web-design , .webiste-structure{
+	p {
+		position: absolute;
+		right: 20px;
+		width: 20%;
+		bottom: 60px;
+	}
+	@media only screen and (max-width: 775px) {
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		p {
+			width: 100%;
+			position: initial;
+			padding: 15px 0;
+
+		}
+	}
+}
+
+.checkbox-group {
+	display: flex;
+	position: relative;
+	label {
+		cursor: pointer;
+	}
+	input {
+		width: auto;
+		min-width: 0;
+	}
+	p {
+		position: absolute;
+		font-size: 18px;
+		font-family: futura;
+		left: 10px;
+	}
+	@media only screen and (max-width: 775px) {
+		display: flex;
+		flex-direction:column;
+		box-sizing:border-box;
+		padding-top: 70px !important;	
+		width: 100%;
+		align-items:center;	
+		p{
+			left: 0;
+			top: 0;
+			text-align: center;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+}
+.icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: 1px solid black;
+	background: white;
+    position: relative;
+    top: 7px;
+    right: 12px;
+}
+
+
+
+
+.group-wrapper {
+	display: flex;
+	margin: 0 10px;
+	label {
+		position: relative;
+		bottom: 5px;
+	}
+	input {
+
+		opacity: 0;
+	&:checked ~ .icon {
+			background: black;
+	}
+}
+@media only screen and (max-width: 775px) {
+		padding: 5px 0 !important;
+	}
+}
+
+.website-destination {
+	input {
+		width: 100%;
+	}
+}
+
+.webiste-explain {
+	span {
+		display: block;
+		font-size: 20px;
+		font-family:futura;
+		margin: 10px 0;
+		cursor: pointer;
+	}
+}
+
+.webiste-structure {
+	input {
+		width: 100%;
+	}
+}
+
+.budget, .launch {
+	margin: 0 auto;
+	select {
+		width: 363px;
+		height: 43px;
+		font-size: 18px;
+		font-family: futura;
+		@media only screen and (max-width: 364px) {
+			width: 100%;
+		}
+
+	}
+	p {
+		padding-bottom: 20px;
+	}
+	@media only screen and (max-width: 775px) { 
+			margin:  20px 0;
+			width: 100%;
+			display: flex;
+			justify-content:center;
+			flex-direction:column;
+			align-items:center;			
+
+	}
+}
+
+.send-brief {
+	display: flex;
+		@media only screen and (max-width: 775px) {
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		
+	}
+}
+
+
+.contact-us {
+	box-sizing:border-box;
+	padding: 30px 0;
+    position: relative;
+    top: 50px;
+    @media only screen and (max-width: 775px) {
+    	top: 0;
+	}
+}
+
+
+.contact-form {
+	display: flex;
+	max-width: 1920px;
+	box-sizing:border-box;
+	padding: 0 10px;
+	justify-content:space-around;
+	position: relative;
+	align-items:center;
+	label {
+		position: absolute;
+		top: -22px;
+			font-size: 18px;
+		font-family: futura;
+	}
+	div {
+		position: relative;
+	}
+	input {
+		height: 25px;
+		width: 90%;
+		font-size: 18px;
+		font-family: futura;
+	}
+	button {
+		font-size: 40px;
+		font-family: futura;
+		text-align: center;
+		border: none;
+		background: none;
+		margin: 0 auto;
+		display: block;
+		margin-top: 50px;
+		outline: none;
+		cursor: pointer;
+	}
+
+	@media only screen and (max-width: 775px) {
+		flex-direction:column;
+		align-items:center;
+	}
+}
+
+.user-name {
+	display: flex;
+	div {
+		position: relative;
+		margin: 0 25px;
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+	}
+}
+
+.user-name, .user-text, .email {
+		box-sizing:border-box;
+		padding: 30px;
+
+}
+
+ .email {
+			label {
+			top: -2px;
+		}
+}
+
+.user-text {
+	p {
+		padding-bottom: 10px;
+	}
+}
+
+.company-info {
+	min-width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+	box-sizing:border-box;
+	padding: 10px 10px;
+	h2 {
+		font-size: 40px;
+		font-family: futura;		
+	}
+	a, p {
+		font-size: 18px;
+		font-family: futura;
+		color: black;
+	}
+}
