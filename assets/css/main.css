@@ -468,7 +468,7 @@ a {
 }
 
 .normal {
-  background: #1a1a1a;
+  background: black;
   position: relative;
   overflow: visible;
   max-width: 1920px;
@@ -759,11 +759,12 @@ a {
 
 @media only screen and (max-width: 878px) {
   .consulting-wrapper {
-    background: #1A1A1A;
+    background: #1a1a1a;
   }
 }
 
 .consulting-item {
+  margin-top: 100px;
   position: relative;
 }
 
@@ -772,6 +773,24 @@ a {
   right: 0;
   top: 0;
   z-index: -1;
+}
+
+.consulting-item .underline {
+  padding-bottom: 1.4px;
+  padding-top: 40px;
+  border-bottom: 2px solid #fff;
+  float: right;
+}
+
+.consulting-item div {
+  float: left;
+  text-align: left;
+}
+
+.consulting-item a {
+  font-family: futura;
+  padding-top: 20px;
+  color: white;
 }
 
 .consulting-item:nth-child(even) {
@@ -790,6 +809,7 @@ a {
 
 @media only screen and (max-width: 878px) {
   .consulting-item {
+    margin-top: 0;
     height: 450px;
   }
   .consulting-item img {
@@ -798,9 +818,15 @@ a {
     height: 373px;
     left: 0;
   }
+  .consulting-item:nth-child(even) {
+    margin-top: 0;
+  }
   .consulting-item:nth-child(even) div {
-    float: left;
-    text-align: left;
+    float: right;
+    text-align: right;
+  }
+  .consulting-item:nth-child(even) .consulting-text {
+    padding: 14px 15px 14px 14px;
   }
 }
 
@@ -818,7 +844,7 @@ a {
 .consulting-text h1 {
   font-size: 40px;
   font-family: futura;
-  padding-bottom: 43px;
+  padding-bottom: 15px;
 }
 
 .consulting-text p {
@@ -828,26 +854,25 @@ a {
 
 @media only screen and (max-width: 878px) {
   .consulting-text {
-    background: #1A1A1A;
+    background: #1a1a1a;
     color: white;
     width: 90%;
     padding: 65px 65px 65px 0;
     width: 80%;
     margin-top: 45px;
   }
-}
-
-.consulting-text h1 {
-  font-size: 25px;
-}
-
-.consulting-text p {
-  font-size: 15px;
+  .consulting-text h1 {
+    font-size: 14px;
+  }
+  .consulting-text p {
+    font-size: 13px;
+    text-align: justify;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .consulting-text {
-    padding: 45px 45px 45px 0;
+    padding: 14px 14px 14px 15px;
   }
 }
 
@@ -856,8 +881,8 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 100px;
-  grid-row-gap: 50px;
+  grid-column-gap: 225px;
+  grid-row-gap: 155px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 100px 192px;
@@ -874,13 +899,16 @@ a {
   .portfolio-wrapper {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 44px;
+    grid-row-gap: 55px;
+    padding: 100px 39px;
   }
 }
 
 @media only screen and (max-width: 620px) {
   .portfolio-wrapper {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1046,7 +1074,7 @@ a {
   display: block;
   max-width: 280px;
   height: 43px;
-  background: #1A1A1A;
+  background: #1a1a1a;
   text-align: center;
   line-height: 43px;
   color: white;
@@ -1085,12 +1113,18 @@ a {
       grid-template-columns: repeat(1, 1fr);
 }
 
-#websitedestination, #competitors, #webdesign, #webstructure {
+#websitedestination,
+#competitors,
+#webdesign,
+#webstructure {
   width: 70%;
   height: 100px;
 }
 
-.website-destination p, .competitors p, .web-design p, .webiste-structure p {
+.website-destination p,
+.competitors p,
+.web-design p,
+.webiste-structure p {
   position: absolute;
   right: 20px;
   width: 20%;
@@ -1098,7 +1132,10 @@ a {
 }
 
 @media only screen and (max-width: 775px) {
-  .website-destination, .competitors, .web-design, .webiste-structure {
+  .website-destination,
+  .competitors,
+  .web-design,
+  .webiste-structure {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1110,7 +1147,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
-  .website-destination p, .competitors p, .web-design p, .webiste-structure p {
+  .website-destination p,
+  .competitors p,
+  .web-design p,
+  .webiste-structure p {
     width: 100%;
     position: initial;
     padding: 15px 0;
@@ -1220,11 +1260,13 @@ a {
   width: 100%;
 }
 
-.budget, .launch {
+.budget,
+.launch {
   margin: 0 auto;
 }
 
-.budget select, .launch select {
+.budget select,
+.launch select {
   width: 363px;
   height: 43px;
   font-size: 18px;
@@ -1232,17 +1274,20 @@ a {
 }
 
 @media only screen and (max-width: 364px) {
-  .budget select, .launch select {
+  .budget select,
+  .launch select {
     width: 100%;
   }
 }
 
-.budget p, .launch p {
+.budget p,
+.launch p {
   padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 775px) {
-  .budget, .launch {
+  .budget,
+  .launch {
     margin: 20px 0;
     width: 100%;
     display: -webkit-box;
@@ -1355,64 +1400,27 @@ a {
   }
 }
 
-.user-name {
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.user-name div {
-  position: relative;
-  margin: 0 25px;
+.whole {
+  height: 100vh;
 }
 
-.user-name div:nth-child(1) {
-  margin-left: 0;
+.contact {
+  height: 78%;
 }
 
-.user-name, .user-text, .email {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 30px;
-}
-
-.email label {
-  top: -2px;
-}
-
-.user-text p {
-  padding-bottom: 10px;
+.contact-form {
+  width: 50vw;
+  background-color: black;
 }
 
 .company-info {
-  min-width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px 10px;
-}
-
-.company-info h2 {
-  font-size: 40px;
-  font-family: futura;
-}
-
-.company-info a, .company-info p {
-  font-size: 18px;
-  font-family: futura;
-  color: black;
+  width: 50vw;
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */
