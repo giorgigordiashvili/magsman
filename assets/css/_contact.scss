@@ -2,19 +2,99 @@
   display: flex;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
 .whole {
   height: 100vh;
 }
 
 .contact {
-  height: 78%;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.contact-form {
-  width: 50vw;
-  background-color: black;
-}
-
 .company-info {
+  @media only screen and (max-width: 768px) {
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    padding: 10px;
+  }
+  div {
+    h1 {
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+      font-size: 30px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    img {
+      padding: 10px;
+    }
+    .pin {
+      @media only screen and (max-width: 768px) {
+        border-bottom: 1px solid black;
+      }
+    }
+    p {
+      @media only screen and (max-width: 768px) {
+        border-top: 1px solid black;
+        padding: 10px;
+      }
+      display: flex;
+      align-items: center;
+    }
+    padding: 40px 50px;
+    border: 1px solid black;
+    @media only screen and (max-width: 768px) {
+      border: 0;
+    }
+  }
   width: 50vw;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-forma {
+  width: 50vw;
+  align-items: center;
+  background-color: #fff;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  form {
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 25px;
+    }
+    input,
+    textarea {
+      border-radius: 0;
+      border: 1px solid black;
+      margin: 20px;
+    }
+
+    label {
+      position: relative;
+      left: 20px;
+    }
+    .contact-send {
+      border: 0;
+      background-color: #fff;
+      font-size: 20px;
+    }
+  }
 }
